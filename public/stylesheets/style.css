@@ -2,11 +2,93 @@
   margin-left: 15px;
 }
 
-.card .card-content .card-title {
-  margin-bottom: 10px;
+body {
+  background-color: #697987;
+  height: 100%;
+  width: 100%;
 }
 
 #search-row form {
   padding-top: 20px;
 }
 
+.card-title {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 115px;
+}
+
+.nav-item {
+  background: #31616D;
+  padding: 10px;
+  color: #CFF6FF;
+}
+
+.card:first-child {
+  border-radius: 0;
+}
+
+#include-card {
+  height: 40rem;
+  max-width: 20rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#intro-card {
+  margin-top: 2rem;
+  border-radius: 0;
+}
+
+#contact-card {
+  height: 40rem;
+  max-width: 20rem;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#chapter-card {
+  height: 40rem;
+  max-width: 20rem;
+  margin-left: 2rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#lesson-video {
+  border-radius: 0;
+}
+
+#lesson-info{
+  height: 40rem;
+  max-width: 20rem;
+  margin-right: 2rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+.progress {
+  width: 60%;
+  max-width: 100rem;
+  justify-content: center;
+  margin: auto;
+  margin-top: .5rem;
+}
+
+#userInfo {
+  margin: auto;
+  margin-top: 3rem;
+  height: 40rem;
+}
+
+li { 
+  cursor: pointer; 
+}
