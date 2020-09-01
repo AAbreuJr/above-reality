@@ -92,3 +92,23 @@ body {
 li { 
   cursor: pointer; 
 }
+
+#welcomeCard {
+    margin: auto;
+    margin-top: 10rem;
+    height: 5rem;
+    font-size: 4rem;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#enjoyCard {
+  margin: auto;
+  margin-top: 2rem;
+  height: 5rem;
+  font-size: 4rem;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+}
