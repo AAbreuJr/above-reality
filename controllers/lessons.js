@@ -1,7 +1,13 @@
+const Lesson = require('../models/lesson')
+
 module.exports = {
-    index
+  index,
 }
 
 function index(req, res) {
-    res.render('lessons')
-}
+    Lesson.find({})
+    .then((lessons) => {
+      res.render('lessons/index', {
+      })
+    })
+  }
