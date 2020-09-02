@@ -128,3 +128,18 @@ li {
   align-items: center;
   justify-content: center;
 }
+
+#included-courses {
+  font-size: 2rem;
+  font-style: italic;
+  
+}
+
+#included-list {
+  font-size: 2rem;
+}
+
+#contact-card {
+  font-size: 2rem;
+  font-style: italic;
+}

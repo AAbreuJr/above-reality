@@ -25,7 +25,7 @@
         <% if (user) { %>
         <ul class='nav nav-pills nav-fill'>
           <li class='nav-item'>
-            <a class='nav-link' href='/users#'>HOMEPAGE</a>
+            <a class='nav-link' href='/users#'>PROFILE</a>
         </li>
             <li class='nav-item'>
                 <a class='nav-link' href='/lessons'>LESSONS</a>
@@ -34,7 +34,7 @@
                 <a class='nav-link' onclick="window.open('http://nashvillenumbersystem.surge.sh/')">NASHVILLE</a>
             </li>
             <li class='nav-item'>
-                <a class='nav-link' href='/gallery'>GALLERY</a>
+                <a class='nav-link' href='/gallery'>ABOUT INSTRUCTOR</a>
             </li>
             <li class='nav-item'>
                 <a class='nav-link' href='/messages'>MESSAGE BOARD</a>
@@ -65,7 +65,14 @@
                 <div class="card" id='include-card'>
                   <div class="card-body">
                     <h5 class="card-title"></h5>
-                    <p class="card-text" id='included-text'>Included Courses</p>
+                    <h3 class="card-header">Included Courses</h3>
+                    <br />
+                    <ul id='included-list'>
+                      <li>Guitar Basics</li>
+                      <li>Guitar Scales</li>
+                      <li>Guitar Chords</li>
+                      <li>And More!</li>
+                    </ul>
                   </div>
                 </div>
                 <div class="card" id='intro-card'>
@@ -77,7 +84,7 @@
                 <div class="card" id='contact-card'>
                   <div class="card-body">
                     <h5 class="card-title"></h5>
-                    <p class="card-text" id='contact-text'>Instagram / Twitter</p>
+                    <h3 class="card-header">Social Media</h3>
                   </div>
               </div>
             </div>
