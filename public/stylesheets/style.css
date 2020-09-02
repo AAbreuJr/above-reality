@@ -144,7 +144,40 @@ li {
   font-style: italic;
 }
 
-#myTab {
-justify-content: center;
-align-items: center;
+#myProfileCard {
+  margin: auto;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
 }
+
+#lessonPage {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#lesson-card {
+  height: 30rem;
+  max-width: 50rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#playlist-card {
+  height: 30rem;
+  max-width: 20rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#createMsg {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+

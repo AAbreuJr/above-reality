@@ -1,9 +1,9 @@
 <%- include('../partials/header') %>
 
-<h3>Message Board</h3>
-<form action="/messages" method="POST">
+
+<form action="/messages" method="POST" id='createMsg'>
   <div class="form-group">
-    <input type="text" class="form-control" aria-describedby="message" name="title" placeholder="Enter a question or a request here...">
+    <input type="text" class="form-control" style="width:200px" aria-describedby="message" name="title" placeholder="Enter a question or a request here...">
   </div>
   <button type="submit" class="btn btn-success">Create Post</button>
 </form>
