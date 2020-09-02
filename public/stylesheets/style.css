@@ -112,3 +112,19 @@ li {
   justify-content: center;
   vertical-align: middle;
 }
+
+#lessonVideo {
+  display: block;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+#image-slide {
+  height: 30rem;
+  width: 30rem;
+  margin: auto;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+}
