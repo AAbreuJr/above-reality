@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const lessonsCtrl = require("../controllers/lessons");
+const galleryCtrl = require("../controllers/gallery");
 
-router.get('/', isLoggedIn, lessonsCtrl.index);
-router.get('/:id', isLoggedIn, lessonsCtrl.show);
+router.get('/', isLoggedIn, galleryCtrl.index);
+router.get('/:id', isLoggedIn, galleryCtrl.show);
 
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) return next();

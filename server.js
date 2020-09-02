@@ -23,6 +23,7 @@ const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
 const lessonsRouter = require('./routes/lessons');
 const messagesRouter = require('./routes/messages');
+const galleryRouter = require('./routes/gallery');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -49,6 +50,7 @@ app.use('/users', usersRouter);
 app.use('/auth', authRouter);
 app.use('/lessons', lessonsRouter);
 app.use('/messages', messagesRouter);
+app.use('/gallery', galleryRouter);
 
 // invalid request, send 404 page
 app.use(function(req, res) {
