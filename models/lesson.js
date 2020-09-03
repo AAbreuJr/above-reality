@@ -8,7 +8,9 @@ const lessonInfoSchema = new Schema({
 });
 
 const lessonSchema = new Schema({
-    video: String,
+    title: String,
+    videoUrl: String,
+    completed: String,
     info: [lessonInfoSchema],
   });
 

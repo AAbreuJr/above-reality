@@ -2,7 +2,15 @@ const Lesson = require('../models/lesson')
 
 module.exports = {
   index,
-  show
+  show,
+  addToCompleted
+}
+
+function addToCompleted(req, res) {
+  req.user.completed.push(req.body)
+  req.user.save().then( () => {
+    res.redirect(`/lessons/${req.body.title}`)
+  })
 }
 
 function show(req, res) {

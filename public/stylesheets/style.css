@@ -181,3 +181,10 @@ li {
   margin-top: 5rem;
 }
 
+#allMessages {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
