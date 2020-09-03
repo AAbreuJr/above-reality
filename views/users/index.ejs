@@ -2,6 +2,7 @@
 
 <div class="card" id="myProfileCard" style="width: 29rem;">
   <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+
     <li class="nav-item">
       <a class="nav-link active" id="myprofile-tab" data-toggle="tab" href="#myprofile" role="tab" aria-controls="profileinfo" aria-selected="true">My Profile</a>
     </li>
@@ -14,6 +15,7 @@
       <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="friends" aria-selected="false">Completed Courses</a>
     </li>
   </ul>
+
   <div class="tab-content" id="myTabContent">
     <div class="tab-pane fade show active" id="myprofile" role="tabpanel" aria-labelledby="profileinfo-tab">
       <div class="card-body">
@@ -23,31 +25,34 @@
         <p class="card-text">Bio: <%= user.bio %></p>
       </div>
     </div>
+
     <!-- This is the card for the 'update' tab -->
     <div class="tab-pane fade" id="editprofile" role="tabpanel" aria-labelledby="updateinfo-tab">
       <div class="card-body">
-          <!-- This is where we'll put our 'update' route -->
-          <form action="/users/profile?_method=PUT" method="POST">
-              <div class="form-row">
-                  <div class="col-md-4">
-                      <label for="userAlias">Alias:</label>
-                      <input type="text" id="userAlias" class="form-control" name="alias" value="<%= user.alias %>">
-                  </div><br>
-              </div>
-              <div class="form-row">
-                  <div class="col-md-12">
-                      <label for="avatarUrl">Avatar Image URL:</label>
-                  <input type="text" id="avatarUrl" class="form-control" name="avatar" value="<%= user.avatar %>">
-                </div>
-              </div>
-              <div class="form-row">
-                  <div class="col-md-12">
-                      <label for="bio">Bio:</label>
-                  <textarea rows="3" id="bio" class="form-control" name="bio"><%= user.bio %></textarea>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-warning">Update</button>
-            </form>
+
+    <!-- This is where we'll put our 'update' route -->
+    <form action="/users/profile?_method=PUT" method="POST">
+      <div class="form-row">
+        <div class="col-md-4">
+          <label for="userAlias">Alias:</label>
+            <input type="text" id="userAlias" class="form-control" name="alias" value="<%= user.alias %>">
+        </div><br>
+      </div>
+
+    <div class="form-row">
+      <div class="col-md-12">
+        <label for="avatarUrl">Avatar Image URL:</label>
+          <input type="text" id="avatarUrl" class="form-control" name="avatar" value="<%= user.avatar %>">
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="col-md-12">
+        <label for="bio">Bio:</label>
+          <textarea rows="3" id="bio" class="form-control" name="bio"><%= user.bio %></textarea>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-warning">Update</button>
+        </form>
       </div>
     </div>
     <!-- This is the card for the 'completed' tab -->
