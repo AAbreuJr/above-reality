@@ -1,13 +1,27 @@
-var mongoose = require('mongoose');
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-
-var userSchema = new mongoose.Schema({
-  name: String,
-  email: String,
-  avatar: String,
-  googleId: String
+const completedLessonSchema = new Schema({
+  title: String,
+  released: Date
 }, {
   timestamps: true
-});
+})
 
-module.exports = mongoose.model('User', userSchema);
+
+const userSchema = new Schema(
+  {
+    name: String,
+    alias: String,
+    email: String,
+    avatar: String,
+    googleId: String,
+    bio: String,
+    watchList: [completedLessonSchema]
+  },
+  {
+    timestamps: true,
+  }
+);
+
+module.exports = mongoose.model("User", userSchema);
