@@ -31,6 +31,6 @@ PlayVid = function() {
 
 PrevVid = function(){
     var videoPanel = document.getElementById('vid');
-    videoPanel.innerHTML = '<iframe width="900" height="500" src="" frameborder="0" allowfullscreen></iframe>';
+    videoPanel.innerHTML = '<iframe width="900" height="500" src="https://www.youtube.com/watch?v=rNO_FSW5XmA" frameborder="0" allowfullscreen></iframe>';
     setTimeout(resetVid, 8500);
 }
