@@ -1,12 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Index Page</title>
-</head>
-<body>
-  
-</body>
-</html>
+<%- include('../partials/header') %>
+
+<div class="card-deck">
+    <div class="card" id='include-card'>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <h3 class="card-header">Included Courses</h3>
+        <br />
+        <ul id='included-list'>
+          <li>Guitar Basics</li>
+          <li>Guitar Scales</li>
+          <li>Guitar Chords</li>
+          <li>And More!</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" id='intro-card'>
+      <div class="card-body">
+        <div class='container'>
+        <div class='c-video'>
+        <video class="video" src="videos/introduction.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="card" id='contact-card'>
+      <div class="card-body">
+        <h5 class="card-title"></h5>
+        <h3 class="card-header">Social Media</h3>
+      </br>
+        <div class="button-container">
+          <button class="twitter-button" id="twitter" onclick="window.open('https://twitter.com/andersonabreujr')">
+              <i class="fab fa-twitter"></i>
+          </button>
+          <p>@AndersonAbreuJr</p>
+        </div>
+
+       <p>-</p>
+       <div class="button-container">
+        <button class="instagram-button" id="instagram" onclick="window.open('https://www.instagram.com/aabreujr_/')">
+            <i class="fab fa-instagram"></i>
+        </button>
+        <p>@aabreujr_</p>
+      </div>
+      </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>
