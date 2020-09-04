@@ -21,7 +21,7 @@ body {
 .nav-item {
   background: #31616D;
   padding: 10px;
-  color: #CFF6FF;
+  color: whitesmoke;
 }
 
 .card:first-child {
@@ -41,6 +41,7 @@ body {
 #intro-card {
   margin-top: 2rem;
   border-radius: 0;
+  width: 10rem;
 }
 
 #contact-card {
@@ -159,8 +160,12 @@ li {
 }
 
 #lesson-card {
-  height: 30rem;
-  max-width: 50rem;
+  margin: auto;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  width: 1000px;
   font-size: 4rem;
   text-align: center;
   border-radius: 0;
@@ -175,16 +180,100 @@ li {
 }
 
 #createMsg {
+  text-align: center;
   margin: auto;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
 }
 
-#allMessages {
+#allMessages, #textBox {
   margin: auto;
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
 }
 
+#msg-card {
+  margin: auto;
+  margin-top: 2rem;
+  height: 20rem;
+  max-width: 70rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#user-msg {
+  font-size: 4rem;
+}
+
+#msgReply1 {
+  margin: auto;
+  margin-top: 3rem;
+  height: auto;
+  max-width: 70rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#msgReply2 {
+  margin: auto;
+  margin-top: 3rem;
+  height: auto;
+  max-width: 70rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#makeReply {
+  margin: auto;
+  margin-top: 3rem;
+  height: 10rem;
+  max-width: 70rem;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+.video {
+  width: 100%;
+}
+
+.c-video {
+  margin-top: 5rem;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+
+.instagram-button {
+  background-image: linear-gradient(to right top, #8a3ab9, #cb339e, #ef4980, #ff6e68, #ff975b, #ff9a5a, #ff9c59, #ff9f58, #fd7d5d, #f25b6a, #dd3d7b, #bc2a8d);
+  border-radius: 10%;
+  margin-top: 2rem;
+}
+
+.twitter-button {
+  background: #00ACEE;
+  border-radius: 10px;
+  margin-top: 3rem;
+}
+
+
+.video2 {
+  margin: auto;
+}
+
+#prevVideo, #markComplete, #nextVideo {
+  display:inline-block;
+}

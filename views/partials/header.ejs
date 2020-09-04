@@ -3,96 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="/javascripts/scripts.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="ocplayer.min.css">
-    <script src="ojcplayer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script defer src="/javascripts/scripts.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
     <title>Above Reality Guitar Institute</title>
 </head>
 <body>
-    <body>
-        <header>
-            <div class="card bg-dark text-white">
-                <div class="card-body">
-                    <h1 class="card-title">ABOVE REALITY GUITAR INSTITUTE</h1>
-                </div>
-              </div>
-        </header>
-    
-        <% if (user) { %>
-        <ul class='nav nav-pills nav-fill'>
-          <li class='nav-item'>
-            <a class='nav-link' href='/users#'>PROFILE</a>
-        </li>
-            <li class='nav-item'>
-                <a class='nav-link' href='/lessons'>LESSONS</a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link' onclick="window.open('http://nashvillenumbersystem.surge.sh/')">NASHVILLE</a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link' href='/gallery'>ABOUT INSTRUCTOR</a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link' href='/messages'>MESSAGE BOARD</a>
-            </li>
-            <li class='nav-item'>
-                <a class='nav-link' href='/auth/logout'>LOG OUT</a>
-            </li>
-        </ul>
-        <% } else { %>
-        <ul class="nav nav-pills nav-fill">
-            <li class="nav-item">
-                <a class="nav-link"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/auth/google">LOG IN</a>
-            </li>
-            </ul>
-            <div class="card-deck">
-                <div class="card" id='include-card'>
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <h3 class="card-header">Included Courses</h3>
-                    <br />
-                    <ul id='included-list'>
-                      <li>Guitar Basics</li>
-                      <li>Guitar Scales</li>
-                      <li>Guitar Chords</li>
-                      <li>And More!</li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="card" id='intro-card'>
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <p class="card-text" id='intro text'>Intro Video</p>
-                  </div>
-                </div>
-                <div class="card" id='contact-card'>
-                  <div class="card-body">
-                    <h5 class="card-title"></h5>
-                    <h3 class="card-header">Social Media</h3>
-                  </div>
-              </div>
+    <header>
+        <div class="card bg-dark text-white">
+            <div class="card-body">
+                <h1 class="card-title">ABOVE REALITY GUITAR INSTITUTE</h1>
             </div>
-          <% } %>
+          </div>
+    </header>
+
+    <!-- User is signed in -->
+    <% if (user) { %>
+    <ul class='nav nav-pills nav-fill'>
+          <li class='nav-item'>
+              <a class='nav-link' href='/lessons'>LESSONS</a>
           </li>
+          <li class='nav-item'>
+              <a class='nav-link' onclick="window.open('http://nashvillenumbersystem.surge.sh/')">NASHVILLE</a>
+          </li>
+          <li class='nav-item'>
+              <a class='nav-link' href='/gallery'>GALLERY</a>
+          </li>
+          <li class='nav-item'>
+              <a class='nav-link' href='/messages'>MESSAGE BOARD</a>
+          </li>
+          <li class='nav-item'>
+            <a class='nav-link' href='/profile'>MY PROFILE</a>
+        </li>
+          <li class='nav-item'>
+              <a class='nav-link' href='/auth/logout'>LOG OUT</a>
+          </li>
+      </ul>
+      <!-- User is not signed in -->
+      <% } else { %>
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item">
+            <a class="nav-link"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/auth/google">LOG IN</a>
+        </li>
         </ul>
-      </div>
-    </nav>
-    </div>
-</body>
-</html>
+      <% } %>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+

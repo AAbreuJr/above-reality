@@ -1,11 +1,11 @@
 const router = require("express").Router();
-const lessonsCtrl = require("../controllers/lessons");
+const profileCtrl = require("../controllers/profile");
 
-router.get('/', isLoggedIn, lessonsCtrl.index);
+router.get('/', isLoggedIn, profileCtrl.index);
 
 function isLoggedIn(req, res, next) {
     if (req.isAuthenticated()) return next();
     res.redirect("/auth/google");
   }
-
-module.exports = router;
+  
+  module.exports = router;

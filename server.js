@@ -18,12 +18,13 @@ require('./config/database');
 require('./config/passport');
 
 // require our routes
-const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
 const authRouter = require('./routes/auth');
-const lessonsRouter = require('./routes/lessons');
 const messagesRouter = require('./routes/messages');
+const profileRouter = require('./routes/profile');
 const galleryRouter = require('./routes/gallery');
+const lessonsRouter = require('./routes/lessons')
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -45,12 +46,12 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // mount all routes with appropriate base paths
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', usersRouter);
 app.use('/auth', authRouter);
-app.use('/lessons', lessonsRouter);
 app.use('/messages', messagesRouter);
+app.use('/profile', profileRouter);
 app.use('/gallery', galleryRouter);
+app.use('/lessons', lessonsRouter);
 
 // invalid request, send 404 page
 app.use(function(req, res) {

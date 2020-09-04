@@ -1,0 +1,40 @@
+<%- include('../partials/header') %>
+
+
+<div class="card" id="myProfileCard" style="width: 29rem;">
+  <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" id="myprofile-tab" data-toggle="tab" href="#myprofile" role="tab" aria-controls="profileinfo" aria-selected="true">My Profile</a>
+    </li>
+    <!-- This is the info for the 'completed' tab -->
+    <li class="nav-item">
+      <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="completed" aria-selected="false"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="completed" aria-selected="false"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="completed" aria-selected="false"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="completed" aria-selected="false"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="completed" aria-selected="false"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" id="completed-tab" data-toggle="tab" href="#completed" role="tab" aria-controls="completed" aria-selected="false"></a>
+    </li>
+    
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="myprofile" role="tabpanel" aria-labelledby="profileinfo-tab">
+      <div class="card-body">
+        <h5 class="card-text">Name: <%= user.name %></h5>
+        <p class="card-text">Email: <%= user.email %></p>
+      </div>
+    </div>
+  </div>
+
+<%- include('../partials/footer') %>
