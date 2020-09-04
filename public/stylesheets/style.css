@@ -256,3 +256,9 @@ li {
 #vid {
   margin-top: 4rem;
 }
+
+#intro-vid {
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
