@@ -63,33 +63,6 @@ body {
   border-radius: 0;
 }
 
-#lesson-video {
-  border-radius: 0;
-}
-
-#lesson-info{
-  height: 40rem;
-  max-width: 20rem;
-  margin-right: 2rem;
-  font-size: 4rem;
-  text-align: center;
-  border-radius: 0;
-}
-
-.progress {
-  width: 60%;
-  max-width: 100rem;
-  justify-content: center;
-  margin: auto;
-  margin-top: .5rem;
-}
-
-#userInfo {
-  margin: auto;
-  margin-top: 3rem;
-  height: 40rem;
-}
-
 li { 
   cursor: pointer; 
 }
@@ -112,13 +85,6 @@ li {
   text-align: center;
   justify-content: center;
   vertical-align: middle;
-}
-
-#lessonVideo {
-  display: block;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
 }
 
 #image-slide {
@@ -157,18 +123,6 @@ li {
   align-items: center;
   justify-content: center;
   margin-top: 5rem;
-}
-
-#lesson-card {
-  margin: auto;
-  margin-top: 3rem;
-  align-items: center;
-  justify-content: center;
-  height: 40rem;
-  width: 1000px;
-  font-size: 4rem;
-  text-align: center;
-  border-radius: 0;
 }
 
 #playlist-card {
@@ -238,25 +192,6 @@ li {
   border-radius: 0;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-}
-
-.video {
-  width: 100%;
-}
-
-.c-video {
-  margin-top: 5rem;
-  width: 100%;
-  max-width: 1920px;
-  position: relative;
-  margin: auto;
-}
-
 .instagram-button {
   background-image: linear-gradient(to right top, #8a3ab9, #cb339e, #ef4980, #ff6e68, #ff975b, #ff9a5a, #ff9c59, #ff9f58, #fd7d5d, #f25b6a, #dd3d7b, #bc2a8d);
   border-radius: 10%;
@@ -269,11 +204,55 @@ li {
   margin-top: 3rem;
 }
 
+/* Lesson card */
+
+#prevVideo, #markComplete, #nextVideo {
+  display:inline-block;
+  margin-bottom: 12rem;
+}
 
 .video2 {
   margin: auto;
 }
 
-#prevVideo, #markComplete, #nextVideo {
-  display:inline-block;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.video {
+  width: 100%;
+}
+
+.c-video {
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+
+#lesson-card {
+  margin: auto;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  width: 1000px;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0;
+}
+
+#lessonBtns {
+  margin-top: 1rem;
+}
+
+.progress {
+  margin-bottom: 15rem;
+}
+
+#vid {
+  margin-top: 4rem;
 }
